@@ -1,0 +1,20 @@
+
+  complex   complex::operator+(float addend)  const
+   {
+    complex sum;
+    sum.rpart = rpart+addend;
+    sum.ipart = ipart;
+    return sum;
+  }
+
+
+ostream&operator<<(ostream&outfile,const complex&z)
+    {
+     if (z.rpart == 0) outfile << z.ipart << "i";
+      else outfile << z.rpart << "+" << z.ipart << "i";
+      return outfile;
+    }
+
+
+
+

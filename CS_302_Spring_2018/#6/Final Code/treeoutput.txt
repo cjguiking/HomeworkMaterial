@@ -1,0 +1,18 @@
+PROJECT SCHEDULE
+design I/O                not critical    3
+design protocol           critical        4
+write I/O                 critical        7
+test user interface       critical        11
+order platform            not critical    2
+set up platform           not critical    3
+get Dept report           not critical    1
+get CIO input             not critical    2
+get CEO report            not critical    3
+design driver             critical        4
+design utilities          not critical    2
+design engine             critical        4
+write main                critical        7
+install lib               not critical    1
+install sort              not critical    1
+test main                 critical        11
+install product           critical        15

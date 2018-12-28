@@ -1,0 +1,15 @@
+void preorderPrint(TreeItr p)
+        {
+          
+          cout << p.getInfo().element<< " " <<p.getInfo().duration << endl;
+          if ( p.hasChild() )
+           {
+           p.advanceChild();
+
+             while ( ! p.isPast() )
+               { 
+                preorderPrint(p);
+                p.advanceSibling();
+               }
+            }
+        }

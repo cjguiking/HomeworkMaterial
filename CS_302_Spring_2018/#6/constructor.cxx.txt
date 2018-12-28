@@ -1,0 +1,17 @@
+        Tree::Tree( )
+        {
+        root = new TreeNode;
+        }
+
+       bool Tree::isEmpty( ) const
+        {
+            return root == NULL;
+        }
+
+        TreeItr Tree::TreeRoot( ) const
+        {
+            return TreeItr( root );
+        }
+
+
+

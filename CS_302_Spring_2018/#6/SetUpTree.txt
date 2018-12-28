@@ -1,0 +1,22 @@
+void setupTree(Tree & T)
+	{
+	TreeItr current, i,j,k,s;
+	Task tmp;
+        current = T.TreeRoot();
+	tmp.element = " install product"; tmp.duration = 4;
+	tmp.critical = 1;
+	current.changeInfo(tmp);
+
+	tmp.critical = 0;
+	s = T.createChild(current);
+	tmp.element = "test main"; tmp.duration = 4;
+	s.changeInfo(tmp);
+
+	k = T.createChild(current);
+	tmp.element = "get CEO report"; tmp.duration = 1;
+	k.changeInfo(tmp);
+
+
+//     ... and so forth
+	}
+

@@ -1,0 +1,19 @@
+
+
+#include<iostream>
+#include<iomanip>
+#include<string>
+#include "TreeN.h"
+using namespace std;
+
+int main()
+{
+Tree theJobs;
+TreeItr Top;
+Top = theJobs.TreeRoot();
+setupTree(theJobs);
+calcCompletion(Top);
+determineCritical(Top);
+cout << "PROJECT SCHEDULE" << endl;
+postorderPrint(Top);
+}
